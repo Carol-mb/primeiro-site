@@ -1,0 +1,164 @@
+
+/* link para fontes do google fontes. Não esquecer de especificar o local onde ela vai executar abaixo */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@200..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    margin: 0; /* espaçamento externo */
+    padding: 0; /* espaçamento interno */
+
+    background-image: url(../imagens/);
+    background-size: cover; /* ajuste na tela */
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-attachment: fixed; /* fica a imagem de fundo */
+}
+.site{
+    /* configuração padrão dos sites */
+    position: relative;
+    width: 1000px; 
+    height: auto;
+    margin: auto;
+    background-color:beige;
+}
+.topo{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.logo{
+    position: relative;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+.menu{
+    position: relative;
+    width: 100%;
+    height: 50px;    
+}
+.menu ul{
+    display: flex; /* deixa conteudo flexivel */
+    justify-content: center; /* alinha conteudo ao centro */
+    list-style: none;  /* oculta ícone de marcador da lista */
+    padding-left: 0%;  /* retirar espaçamento dos marcadores da lista */
+    margin: 0%;
+}
+.menu ul li{
+        font-family: "Oswald", sans-serif;
+}
+.menu ul li a{
+    float: left; /* Flutua a lista em linha */
+    padding: 15px 30px;
+    color: inherit; /* deixa a cor padrão do site */
+    text-decoration: none;
+}
+.menu ul li a:hover{  /* hover=efeito ao passar o mouse sobre o elemento */
+    background-color: rgb(243, 146, 203);
+    color: white;
+    transition: 1.2s;
+    border-radius: 15px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url('../imagens/banner 2.jpg') center; /* insere a imagem selecionada como fundo */
+    background-size: cover;
+    display: flex; /* transforma o elemento em flexivel */
+    justify-content: end; /* alinha o texto na direção indicada */
+    align-items: center; /* centraliza o conteudo na vertical */
+    flex-direction: column; /* Alinha os elementos uma linha embaixo da outra */   
+}
+.banner h1, .banner p{
+    margin: 0px;
+    color: white;
+    font-family: "Oswald", sans-serif; /* fonte google fontes */  
+}
+.fundo-banner{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;  /* corrige o elemento de acordo com a borda */  
+}
+.conteudo{
+    /* caixa que vai agragar os box dentro */
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin: 50px 0;  /* duas medidas margin= eixo vertical e horizontal */
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 550px;
+    float: left; /* flutuando os box dentro do conteudo */
+    margin-right: 50px;
+    border: 3px rgb(192, 189, 189) solid;
+    box-sizing: border-box; /* toda vez que colocar borden e padding é necessário colocar box-sizing: border-box pois ele alinha o tamanho sem alterar layot final */
+    border-radius: 10px; /* arredonda as bordas */
+}
+.box:last-child{ /* retirada da margem do lado direito */
+    margin-right: 0;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* borda arredondada foto lado esquerdo */
+    border-top-right-radius: 10px; /* borda arredondada foto lado direito */
+}
+.box h3, .box p{
+    padding: 10px;
+    font-family: "Edu VIC WA NT Beginner", cursive; /* fonte google fontes */
+    margin: 0;
+}
+.box h3{
+    text-align: center; /* centralizou titulo */
+    font-family: "Oswald", sans-serif; /* fonte google fontes */
+    text-shadow: 1px 1px 2px rgb(34, 33, 33); /* sombreamento no texto */
+}
+.box:hover{
+    box-shadow: 0px 0px 25px rgb(41, 40, 40); /* sombreamento */
+    cursor: pointer; /* muda o cursor com maozinha */
+    transition: 1.2s; /* faz a mudança solicitada em transição */
+    transform: scale(1.2); /* zoom */
+    transform: rotate(360deg);    /* rotação */
+}
+.rodape{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.rodape-coluna{
+    position: relative;
+    width: 33%;
+    height: auto;
+    float: left;
+}
+.rodape-coluna ul{
+    list-style: none; /* tira a marcação da lista */
+    padding-left: 0; /* arruma a margem apos tirar a marcação da lista */
+}
+.rodape-coluna ul li a{
+    color: inherit; /* mantem a cor original */
+    text-decoration: none; /* tira o sublinhado do link */
+    font-family: "Oswald", sans-serif;
+}
+.lista-rodape li{
+    margin-bottom: 10px; /* espaçamento entre a lista */
+}
+.icones-rodape li{
+    float: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.icones-rodape li a{
+    padding: 10px 20px;
+    background-color: rgb(252, 141, 159);
+    border-radius: 5px;
+    color: beige !important;  /* quando há conflito de informação, se coloca ! para especificar que essa informação é a que vale */   
+}
+
+
+
